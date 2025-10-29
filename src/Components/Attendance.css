@@ -1,0 +1,123 @@
+.attendance-container {
+  background-color: #f8f9fb;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card {
+  border: 2px solid #28a745;
+}
+
+.content-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-card .rdp {
+  width: 100%;
+  justify-content: center;
+}
+
+.progress {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  border-radius: 10px;
+}
+
+h5, .fw-semibold {
+  color: #333;
+}
+
+/* --- Calendar Styling --- */
+.calendar-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Center the calendar inside the card */
+.calendar-card .rdp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Calendar header (month & arrows) */
+.calendar-card .rdp-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.calendar-card .rdp-nav_button {
+  background: #f5f6f8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calendar-card .rdp-nav_button:hover {
+  background: #e1e4e8;
+}
+
+/* Day grid styling */
+.calendar-card .rdp-day {
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin: 2px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.calendar-card .rdp-day:hover {
+  background: #f0f0f0;
+}
+
+/* Selected day highlight */
+.calendar-card .rdp-day_selected {
+  background: #00b087 !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+/* Today’s date subtle highlight */
+.calendar-card .rdp-day_today {
+  border: 1px solid #00b087;
+}
+
+/* Weekday labels */
+.calendar-card .rdp-head_cell {
+  color: #666;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* Hide outer border */
+.calendar-card .rdp-table {
+  border-collapse: separate;
+  border-spacing: 4px;
+}
